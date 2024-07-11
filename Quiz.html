@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="containerNew">
+        <header>
+            <div>
+                <a href="./highscore.html">
+                    <button class="scores-header" id="view-high-scores">
+                        View High Scores
+                    </button>
+                </a>
+            </div>
+            <div class="timer">
+                <p>Time: <span id="time">0</span></p>
+            </div>
+        </header>
+        <main class="quiz">
+            <div id="start-screen">
+                <h1>Ronaldo Quiz Challenge</h1>
+                <p>Try to answer the following Ronaldo-related questions within the time limit. Incorrect answers will penalize your time by ten seconds!</p>
+                <button id="start">Start Quiz</button>
+            </div>
+            <div id="question-container" class="hide">
+                <h2 id="questions"></h2>
+                <div id="options" class="options"></div>
+                <p id="feedback" class="feedback hide"></p>
+            </div>
+            <div id="end-screen" class="hide">
+                <h2>All Done!</h2>
+                <p>Your final score is: <span id="score-final"></span></p>
+                <p>
+                    Please enter your name: <input type="text" id="name" />
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
